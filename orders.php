@@ -23,9 +23,7 @@ $title ='orders';
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Orders</h1>        
       </div>
-      
-      <a href="product-form.html" class="btn btn-success text-white mb-3 float-right"><i class="fas fa-plus-square"></i> New Product</a>
-      
+            
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -36,7 +34,6 @@ $title ='orders';
               <th>Sub total</th>
               <th>Tax</th>
               <th>Total</th>
-              <th>Actions</th>
             </tr>
           </thead>
           <?php
@@ -50,20 +47,10 @@ $title ='orders';
             <tr>
               <td><?=$order['inv_number']?></td>
               <td><?=$order['fullname']?></td>
-              <td><?=$order['inv_date']?></td>
+              <td><?= date('d-m-y',strtotime($order['inv_date']))?></td>
               <td><?=$order['inv_subtotal']?></td>
               <td><?=$order['inv_tax']?></td>
               <td><?=$order['inv_total']?></td>
-              <td >
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">                  
-                  <label class="btn btn-primary btn-sm">
-                    <a href="" class="text-white"><i class="fas fa-pen"></i></a>
-                  </label>
-                  <label class="btn btn-danger btn-sm">
-                    <a href="" class="text-white"><i class="fas fa-trash"></i></a>
-                  </label>
-                </div>
-              </td>
             </tr>
           <?php } ?>           
           </tbody>
