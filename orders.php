@@ -47,7 +47,7 @@ $title ='orders';
             <tr>
               <td><?=$order['inv_number']?></td>
               <td><?=$order['fullname']?></td>
-              <td><?= date('d-m-y',strtotime($order['inv_date']))?></td>
+              <td><?= date('d-M-Y',strtotime($order['inv_date']))?></td>
               <td><?=$order['inv_subtotal']?></td>
               <td><?=$order['inv_tax']?></td>
               <td><?=$order['inv_total']?></td>
