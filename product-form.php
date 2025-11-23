@@ -15,6 +15,7 @@ if(isset($_POST['insert'])){
     header('location: products.php');
   }
 }
+
 ?>
 <!doctype html>
 <html lang="en">

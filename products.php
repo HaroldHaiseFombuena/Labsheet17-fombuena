@@ -90,7 +90,7 @@
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">                  
                   <button class="btn btn-primary btn-sm" name="update">
                     <input type= "hidden" name="pcode" value ="<?=$product['p_code']?>">
-                   <i class="fas fa-pen"></i>
+                   <a href="" class="text-white">><i class="fas fa-pen"></i></a>
                 </button>
                   <form method="post">
                     <input type= "hidden" name="pcode" value ="<?=$product['p_code']?>">
