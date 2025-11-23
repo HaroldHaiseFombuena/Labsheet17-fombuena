@@ -88,9 +88,10 @@
               <td><?=$product['p_qoh']?></td>
               <td >
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">                  
-                  <label class="btn btn-primary btn-sm">
-                    <a href="" class="text-white"><i class="fas fa-pen"></i></a>
-                  </label>
+                  <button class="btn btn-primary btn-sm" name="update">
+                    <input type= "hidden" name="pcode" value ="<?=$product['p_code']?>">
+                   <i class="fas fa-pen"></i>
+                </button>
                   <form method="post">
                     <input type= "hidden" name="pcode" value ="<?=$product['p_code']?>">
                   <button class="btn btn-danger btn-sm" name = "delete">
