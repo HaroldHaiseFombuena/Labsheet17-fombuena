@@ -20,6 +20,12 @@
               orders
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link <?=$title=='customers'?'active':''?>" href="customers.php">
+              <span data-feather="users"></span>
+              Customers
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
