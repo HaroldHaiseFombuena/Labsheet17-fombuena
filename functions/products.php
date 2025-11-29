@@ -61,16 +61,4 @@ function addProducts($pcode, $pdesc,$pqoh,$price){
     if($result) return true;
     return $false;
 }
-// function updateProducts($pcode, $pdesc,$pqoh,$price){
-//     $conn = Connect();
 
-//     $query = "UPDATE product SET 
-//             p_descript = '$pdesc',
-//             p_qoh = $pqoh,
-//             p_price = $price
-//             WHERE p_code = '$pcode'";
-//     $result = $conn->query($query); 
-//     $conn->close();
-//     if($result) return true;
-//     return $false;
-// }
